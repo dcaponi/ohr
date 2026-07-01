@@ -16,9 +16,9 @@ assistant that lets a working scientist ask a natural-language question and get 
 
 <video src="https://github.com/dcaponi/ohr/raw/main/media/walkthrough.mp4" poster="https://github.com/dcaponi/ohr/raw/main/media/walkthrough-poster.jpg" controls width="100%"></video>
 
-▶ **[Watch the narrated walkthrough](https://github.com/dcaponi/ohr/raw/main/media/walkthrough.mp4)** (with audio) — asking a question and inspecting the retrieved chunks, the mock Google Drive, tuning the prompts / Top-K, and what each evaluation metric means.
+![Walkthrough preview (silent)](media/walkthrough.gif)
 
-[![Walkthrough thumbnail](media/walkthrough-poster.jpg)](https://github.com/dcaponi/ohr/raw/main/media/walkthrough.mp4)
+▶ **[Watch the full narrated walkthrough](https://github.com/dcaponi/ohr/raw/main/media/walkthrough.mp4)** (with audio) — asking a question and inspecting the retrieved chunks, the mock Google Drive, tuning the prompts / Top-K, and what each evaluation metric means.
 
 ---
 
