@@ -35,10 +35,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Railway CLI
-        run: npm i -g @railway/cli
       - name: Deploy
-        run: railway up --service "$RAILWAY_SERVICE" --ci
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
           RAILWAY_SERVICE: ${{ secrets.RAILWAY_SERVICE }}
+        run: |
+          if [ -z "$RAILWAY_TOKEN" ]; then
+            echo "RAILWAY_TOKEN not set — skipping deploy."
+            echo "Either add RAILWAY_TOKEN + RAILWAY_SERVICE secrets to use this pipeline,"
+            echo "or use Railway's native GitHub integration (auto-deploys on push)."
+            exit 0
+          fi
+          npm i -g @railway/cli
+          railway up --service "$RAILWAY_SERVICE" --ci
