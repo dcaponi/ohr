@@ -199,8 +199,6 @@ Per the brief (a ~4-hour, judgment-over-polish slice), I deliberately left out:
   approach was a better return on time; the eval harness is in place to justify
   adding a reranker later against measured recall.
 - **Real Google Drive / OAuth** — mocked, as allowed.
-- **Cron scheduling** — the freshness/index endpoints exist and are wired; I did
-  not stand up an actual scheduler (not needed to demonstrate the workflow).
 - **Patents / experiment write-ups** in the corpus — papers + SOPs cover the
   representative cases; adding more document types is just more ingestion.
 
