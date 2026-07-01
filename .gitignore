@@ -8,4 +8,5 @@ build
 .DS_Store
 .drizzle
 next-env.d.ts
+*.tsbuildinfo
 .claude/settings.local.json
