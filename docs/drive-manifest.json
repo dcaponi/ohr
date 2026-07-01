@@ -1,0 +1,272 @@
+[
+  {
+    "id": "paper-0001",
+    "name": "Study of Fischer-Tropsch Type reactions on chondritic meteorites",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2105.08498",
+    "contentPath": "docs/papers/paper-0001.pdf",
+    "modifiedTime": "2026-06-20T12:07:00Z"
+  },
+  {
+    "id": "paper-0002",
+    "name": "ML-based Method for Solving the Microkinetic Model of Fischer-Tropsch Synthesis with Varying Catalyst/Reactor Parameters",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2503.22304",
+    "contentPath": "docs/papers/paper-0002.pdf",
+    "modifiedTime": "2026-06-20T12:14:00Z"
+  },
+  {
+    "id": "paper-0003",
+    "name": "Accurate and Fast Fischer-Tropsch Reaction Microkinetics using PINNs",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2311.10456",
+    "contentPath": "docs/papers/paper-0003.pdf",
+    "modifiedTime": "2026-06-20T12:21:00Z"
+  },
+  {
+    "id": "paper-0004",
+    "name": "Physics-informed neural networks need a physicist to be accurate: the case of mass and heat transport in Fischer-Tropsch catalyst particles",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2411.10048",
+    "contentPath": "docs/papers/paper-0004.pdf",
+    "modifiedTime": "2026-06-20T12:28:00Z"
+  },
+  {
+    "id": "paper-0005",
+    "name": "High efficient sunlight-driven CO2 hydrogenation to methanol over NiZn intermetallic catalysts under atmospheric pressure",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2404.14085",
+    "contentPath": "docs/papers/paper-0005.pdf",
+    "modifiedTime": "2026-06-20T12:35:00Z"
+  },
+  {
+    "id": "paper-0006",
+    "name": "CO2-CH4 conversion and syngas formation at atmospheric pressure using a multi-electrode dielectric barrier discharge",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/1707.07709",
+    "contentPath": "docs/papers/paper-0006.pdf",
+    "modifiedTime": "2026-06-20T12:42:00Z"
+  },
+  {
+    "id": "paper-0007",
+    "name": "Photocatalytic Carbon Dioxide Methanation by High-Entropy Oxides: Significance of Work Function",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2503.15799",
+    "contentPath": "docs/papers/paper-0007.pdf",
+    "modifiedTime": "2026-06-20T12:49:00Z"
+  },
+  {
+    "id": "paper-0008",
+    "name": "Site-dependent levelized cost assessment for fully renewable Power-to-Methane systems",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2002.06007",
+    "contentPath": "docs/papers/paper-0008.pdf",
+    "modifiedTime": "2026-06-20T12:56:00Z"
+  },
+  {
+    "id": "paper-0009",
+    "name": "Syngas conversion to higher alcohols via wood-framed Cu/Co-carbon catalyst",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2405.15526",
+    "contentPath": "docs/papers/paper-0009.pdf",
+    "modifiedTime": "2026-06-20T13:03:00Z"
+  },
+  {
+    "id": "paper-0010",
+    "name": "Catlas: an automated framework for catalyst discovery demonstrated for direct syngas conversion",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2208.12717",
+    "contentPath": "docs/papers/paper-0010.pdf",
+    "modifiedTime": "2026-06-20T13:10:00Z"
+  },
+  {
+    "id": "paper-0011",
+    "name": "Multi-fidelity Bayesian Optimisation of Syngas Fermentation Simulators",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2311.05776",
+    "contentPath": "docs/papers/paper-0011.pdf",
+    "modifiedTime": "2026-06-20T13:17:00Z"
+  },
+  {
+    "id": "paper-0012",
+    "name": "Methane Oxidation to Methanol without CO2 Emission: Catalysis by Atomic Negative Ions",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/1403.0597",
+    "contentPath": "docs/papers/paper-0012.pdf",
+    "modifiedTime": "2026-06-20T13:24:00Z"
+  },
+  {
+    "id": "paper-0013",
+    "name": "Autonomous Kinetic Modeling of Biomass Pyrolysis using Chemical Reaction Neural Networks",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2105.11397",
+    "contentPath": "docs/papers/paper-0013.pdf",
+    "modifiedTime": "2026-06-20T13:31:00Z"
+  },
+  {
+    "id": "paper-0014",
+    "name": "Multiphase modeling of anisotropic biomass particle pyrolysis accounting for particle deformation and coupled gas-phase dynamics",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2510.17588",
+    "contentPath": "docs/papers/paper-0014.pdf",
+    "modifiedTime": "2026-06-20T13:38:00Z"
+  },
+  {
+    "id": "paper-0015",
+    "name": "Generic approach for the modeling of liquefied thermochemical products and biomass heat of formation. Case study: HTL biocrude, Pyrolysis oil and assessment of energy requirements",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/1908.00799",
+    "contentPath": "docs/papers/paper-0015.pdf",
+    "modifiedTime": "2026-06-20T13:45:00Z"
+  },
+  {
+    "id": "paper-0016",
+    "name": "Hydrogen production from blended waste biomass: pyrolysis, thermodynamic-kinetic analysis and AI-based modelling",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2510.15960",
+    "contentPath": "docs/papers/paper-0016.pdf",
+    "modifiedTime": "2026-06-20T13:52:00Z"
+  },
+  {
+    "id": "paper-0017",
+    "name": "Highly dispersed Ru nanoparticles anchored on NiAl layered double oxides catalyst for selective hydrodeoxygenation of vanillin",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2403.16433",
+    "contentPath": "docs/papers/paper-0017.pdf",
+    "modifiedTime": "2026-06-20T13:59:00Z"
+  },
+  {
+    "id": "paper-0018",
+    "name": "Two-stage catalytic hydrotreatment of highly nitrogenous biocrude from continuous hydrothermal liquefaction: A rational design of the stabilization stage",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2006.09957",
+    "contentPath": "docs/papers/paper-0018.pdf",
+    "modifiedTime": "2026-06-20T14:06:00Z"
+  },
+  {
+    "id": "paper-0019",
+    "name": "Benchmarking real-time monitoring strategies for ethanol production from lignocellulosic biomass",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2101.12360",
+    "contentPath": "docs/papers/paper-0019.pdf",
+    "modifiedTime": "2026-06-20T14:13:00Z"
+  },
+  {
+    "id": "paper-0020",
+    "name": "A Structured Framework for Predicting Sustainable Aviation Fuel Properties using Liquid-Phase FTIR and Machine Learning",
+    "type": "paper",
+    "version": 1,
+    "sourceUrl": "https://arxiv.org/abs/2408.01530",
+    "contentPath": "docs/papers/paper-0020.pdf",
+    "modifiedTime": "2026-06-20T14:20:00Z"
+  },
+  {
+    "id": "sop-0001",
+    "name": "SOP: Benchtop Centrifuge Operation",
+    "type": "sop",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sops/sop-0001.md",
+    "modifiedTime": "2026-06-20T15:11:00Z"
+  },
+  {
+    "id": "sop-0002",
+    "name": "SOP: Agarose Gel Electrophoresis",
+    "type": "sop",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sops/sop-0002.md",
+    "modifiedTime": "2026-06-20T15:22:00Z"
+  },
+  {
+    "id": "sop-0003",
+    "name": "SOP: Compound Light Microscope Operation",
+    "type": "sop",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sops/sop-0003.md",
+    "modifiedTime": "2026-06-20T15:33:00Z"
+  },
+  {
+    "id": "sop-0004",
+    "name": "SOP: Steam Autoclave Sterilization",
+    "type": "sop",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sops/sop-0004.md",
+    "modifiedTime": "2026-06-20T15:44:00Z"
+  },
+  {
+    "id": "sop-0005",
+    "name": "SOP: Analytical Balance Weighing",
+    "type": "sop",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sops/sop-0005.md",
+    "modifiedTime": "2026-06-20T15:55:00Z"
+  },
+  {
+    "id": "shark-0001",
+    "name": "Shark Facts: Great White Shark Biology and Behavior",
+    "type": "shark",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sharks/shark-0001.md",
+    "modifiedTime": "2026-06-20T18:13:00Z"
+  },
+  {
+    "id": "shark-0002",
+    "name": "Shark Facts: Shark Senses and Anatomy",
+    "type": "shark",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sharks/shark-0002.md",
+    "modifiedTime": "2026-06-20T18:26:00Z"
+  },
+  {
+    "id": "shark-0003",
+    "name": "Shark Facts: Shark Reproduction and Life Cycle",
+    "type": "shark",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sharks/shark-0003.md",
+    "modifiedTime": "2026-06-20T18:39:00Z"
+  },
+  {
+    "id": "shark-0004",
+    "name": "Shark Facts: Shark Conservation, Threats, and Finning",
+    "type": "shark",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sharks/shark-0004.md",
+    "modifiedTime": "2026-06-20T18:52:00Z"
+  },
+  {
+    "id": "shark-0005",
+    "name": "Shark Facts: The Diversity of Sharks",
+    "type": "shark",
+    "version": 1,
+    "sourceUrl": "",
+    "contentPath": "docs/sharks/shark-0005.md",
+    "modifiedTime": "2026-06-20T19:05:00Z"
+  }
+]

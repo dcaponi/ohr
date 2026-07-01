@@ -1,0 +1,1 @@
+ALTER TABLE "prompts" ADD COLUMN "top_k" integer DEFAULT 5 NOT NULL;

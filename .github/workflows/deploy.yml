@@ -1,0 +1,44 @@
+name: CI / Deploy to Railway
+
+# CI (typecheck + build) runs on every push and PR. Deploy runs only on pushes
+# to main, after CI passes, and only if the Railway secrets are configured.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    name: Typecheck & build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsc --noEmit
+      # Build with placeholder env so config that reads env at build time is happy.
+      # (The app only needs real keys at runtime, not build time.)
+      - run: npm run build
+        env:
+          DATABASE_URL: postgres://user:pass@localhost:5432/db
+          ANTHROPIC_API_KEY: build-time-placeholder
+          OPENAI_API_KEY: build-time-placeholder
+
+  deploy:
+    name: Deploy to Railway
+    needs: ci
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Railway CLI
+        run: npm i -g @railway/cli
+      - name: Deploy
+        run: railway up --service "$RAILWAY_SERVICE" --ci
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_SERVICE: ${{ secrets.RAILWAY_SERVICE }}
