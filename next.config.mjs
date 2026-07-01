@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // pdf-parse and postgres are server-only; keep them out of the client bundle.
-  serverExternalPackages: ["pdf-parse", "postgres"],
+  // Server-only packages; keep them out of the client bundle / unbundled on server.
+  serverExternalPackages: [
+    "pdf-parse",
+    "postgres",
+    "mcp-handler",
+    "@modelcontextprotocol/sdk",
+  ],
 };
 
 export default nextConfig;

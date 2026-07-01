@@ -2,10 +2,7 @@
 
 **Take-home Exercise 4 (Research Knowledge Assistant).** A retrieval Q&A
 assistant that lets a working scientist ask a natural-language question and get a
-**grounded, cited answer** drawn from a corpus of documents, and that **declines
-gracefully** when the corpus doesn't contain the answer. The corpus lives in a
-**mock Google Drive** (a real Drive integration is out of scope per the brief;
-mocking is explicitly allowed).
+**grounded, cited answer** drawn from a corpus of documents, and that **declines gracefully** when the corpus doesn't contain the answer.
 
 - **Live surfaces:** a chat UI, a JSON API (`POST /api/ask`), and an **MCP
   server** (`question_answering` tool) so it can be driven from Claude Code.
@@ -58,6 +55,7 @@ runner) is documented separately.
 ---
 
 ## How to use it
+Go here -> https://ohr-production-bc95.up.railway.app/
 
 Three surfaces, all backed by the same pipeline:
 
@@ -88,14 +86,26 @@ deep-links to the exact paragraph.
 
 ### JSON API
 ```bash
-curl -s localhost:3000/api/ask -H 'content-type: application/json' \
+curl -s https://ohr-production-bc95.up.railway.app/api/ask -H 'content-type: application/json' \
   -d '{"question":"How is Fischer-Tropsch synthesis used to make hydrocarbons?"}'
 # → { answer, searches, retrieved, chunksUsed, irrelevantChunks, links }
 ```
 
 ### MCP server
-Exposes one `question_answering` tool running the same pipeline, so the assistant
-can be used from Claude Code:
+Exposes one `question_answering` tool running the same pipeline, so it can be
+driven from Claude Code. Two transports:
+
+**Remote (recommended)** — the deployed app serves an MCP **Streamable HTTP**
+endpoint at `/api/mcp`. Connect to the running Railway instance by URL:
+```bash
+claude mcp add --transport http ohr-rag \
+  https://ohr-production-bc95.up.railway.app/api/mcp \
+  --header "Authorization: Bearer <MCP_TOKEN>"
+```
+(Drop `--header` if `MCP_TOKEN` isn't set on the server. `MCP_TOKEN` is a shared
+secret that, when set, gates the endpoint.)
+
+**Local (stdio)** — for local development, run the tool as a subprocess:
 ```bash
 claude mcp add ohr-rag -- npx tsx /ABSOLUTE/PATH/TO/ohr/mcp/server.ts
 ```
@@ -182,28 +192,9 @@ each result as it completes, so a run survives the user navigating away, with a
 "Last run" timestamp for transparency. (This is also why the app targets a
 persistent server rather than serverless functions.)
 
-**The shark documents are deliberate.** A scientist's corpus in reality contains
-plenty of material irrelevant to any given question. The shark set is an
-out-of-domain block that lets the evals demonstrate two things the brief cares
-about: retrieval **precision** (does a fuel-synthesis question pull only fuel
-chunks?) and **graceful decline** (an off-corpus question returns nothing rather
-than forcing an answer).
-
----
-
-## Where and why I stopped
-
-Per the brief (a ~4-hour, judgment-over-polish slice), I deliberately left out:
-- **Auth, multi-tenant, rate limiting, hardening** — explicitly out of scope.
-- **Reranking / hybrid (BM25 + vector) retrieval** — the two-prompt multi-query
-  approach was a better return on time; the eval harness is in place to justify
-  adding a reranker later against measured recall.
-- **Real Google Drive / OAuth** — mocked, as allowed.
-- **Patents / experiment write-ups** in the corpus — papers + SOPs cover the
-  representative cases; adding more document types is just more ingestion.
-
-The line I held: a genuinely working end-to-end slice (ingest → retrieve →
-grounded cited answer → decline behavior → measurable evals) over breadth.
+**The shark documents are deliberate.** A corpus often contains
+material irrelevant to any given question. The shark facts are an
+out-of-domain block that lets the evals demonstrate two things: retrieval **precision** (does a fuel-synthesis question pull only relevant chunks?) and **graceful decline** (an off-corpus question returns nothing rather than forcing an answer).
 
 ---
 
