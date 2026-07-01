@@ -1,0 +1,38 @@
+[
+  {
+    "id": "intro",
+    "text": "This is Ohr, a research knowledge assistant. It answers natural language questions over a corpus of scientific documents, and grounds every answer in the source material with citations you can verify. Let's ask it something."
+  },
+  {
+    "id": "type",
+    "text": "I'll ask a real question from the corpus: what methanol production rate and selectivity did the NiZn catalyst achieve for sunlight-driven carbon dioxide hydrogenation?"
+  },
+  {
+    "id": "pipeline",
+    "text": "When I hit send, two prompts run. A query planner first rewrites my question into several focused searches. Each search is embedded and run against a pgvector database. We keep the top matches from each, dedupe them, and pass that combined context to an answerer prompt, which writes the answer using only those retrieved chunks."
+  },
+  {
+    "id": "answer",
+    "text": "Here's the grounded answer: one hundred twenty seven point five micromoles per gram per hour, at one hundred percent selectivity, with inline bracket citations. Each claim traces back to a specific paragraph. And when the corpus doesn't contain an answer, it says so, instead of making one up."
+  },
+  {
+    "id": "chunks",
+    "text": "Beneath the answer I can expand the chunks it actually used. Each one links straight to its source: an arXiv page, highlighted at the exact passage. I can also see every chunk the search retrieved, ranked by similarity."
+  },
+  {
+    "id": "drive",
+    "text": "The corpus lives behind a mock Google Drive: twenty arXiv papers, five lab SOPs, and a few distractor documents, each with a version number. Opening a document shows its paragraphs, and the citation links deep-link right to the paragraph a claim came from."
+  },
+  {
+    "id": "prompts",
+    "text": "The evals page is where we tune and measure quality. These are the two master prompts. The search prompt controls how many queries we expand into. More queries widen coverage. And Top-K sets how many chunks we keep per search and overall. Higher K gives the answerer more context but adds noise; lower K is tighter but can miss things. Saving a prompt automatically re-runs every evaluation."
+  },
+  {
+    "id": "metrics",
+    "text": "Let's expand an evaluation. Precision is the fraction of retrieved chunks that were expected: how much of what we pulled was relevant. Recall is the fraction of expected chunks we actually retrieved: the key signal, because low recall means the answer was built on incomplete context. Relevancy is a yes or no judge: does the answer address the question. Groundedness breaks the answer into individual facts and checks each against the retrieved text; the percentage is how many were supported, our direct measure of hallucination. Together they tell us not just whether the answer looks right, but whether the retrieval and grounding behind it are sound."
+  },
+  {
+    "id": "outro",
+    "text": "Grounded answers, verifiable citations, graceful refusals, and a measurable evaluation loop. That's Ohr. Thanks for watching."
+  }
+]
